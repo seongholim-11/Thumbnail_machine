@@ -8,18 +8,25 @@ const randomRGB = function() {
     return rgb;
   }
 
-const randomgradation = () => {
-    const twoColor = []
-    twoColor.push(randomRGB())
-    twoColor.push(randomRGB())
-    return twoColor
-}
-
 const Background = (props) => {
+
+    const randomColor = () => {
+        props.setGradationColor([])
+        const oneColor = randomRGB()
+        return oneColor
+    }
+    
+    const randomgradation = () => {
+        props.setBackgroundColor('')
+        const twoColor = []
+        twoColor.push(randomRGB())
+        twoColor.push(randomRGB())
+        return twoColor
+    }
     
   return (
     <div>
-        <button onClick={() => props.setBackgroundColor(randomRGB())}>랜덤 색상</button>
+        <button onClick={() => props.setBackgroundColor(randomColor())}>랜덤 색상</button>
         <button onClick={() => props.setGradationColor(randomgradation())}>랜덤 그라데이션</button>
     </div>
   )
