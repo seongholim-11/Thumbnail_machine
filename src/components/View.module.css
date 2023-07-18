@@ -1,0 +1,24 @@
+.wrap {
+    width: 800px;
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 130px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.title {
+    font-size: 80px;
+}
+
+.subtitle {
+    font-size: 40px;
+}
+
+.hashtag {
+    font-size: 20px;
+}
