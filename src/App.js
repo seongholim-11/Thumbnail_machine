@@ -15,16 +15,10 @@ function App() {
     // Background
     const [backgroundColor, setBackgroundColor] = useState("");
     const [gradationColor, setGradationColor] = useState([]);
-    console.log("🚀 ~ file: App.js:19 ~ App ~ gradationColor:", gradationColor);
-    console.log(
-        "🚀 ~ file: App.js:16 ~ App ~ backgroundColor:",
-        backgroundColor
-    );
 
     // capture
     const captureEl = useRef();
     const appEl = useRef();
-    console.log("🚀 ~ file: App.js:23 ~ App ~ appEl:", appEl);
 
     const onCapture = () => {
         const element = captureEl.current;
