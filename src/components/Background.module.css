@@ -1,0 +1,23 @@
+.button1 {
+    background-color: yellowgreen;
+    box-shadow: 
+      0 14px 0 rgb(90, 121, 29),
+      0 20px 14px rgba(0,0,0,.2);
+      min-width: 300px;
+      height: 70px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      display: flex; justify-content: center; align-items: center;
+      color: white; font-size: 24px; font-weight: 700;
+      /* 드래그 방지 */
+      user-select: none;
+      cursor: pointer;
+      transition: 0.4s;
+  }
+
+  .loading {
+    box-shadow: 
+      0 4px 0 rgb(90, 121, 29),    
+      0 4px 4px rgba(0,0,0,.2);
+  }

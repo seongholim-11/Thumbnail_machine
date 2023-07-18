@@ -13,7 +13,7 @@ const View = (props) => {
 
     return (
         <div className={style.wrap} style={backgroundStyle}>
-            <div className={style.title}>{props.title}</div>
+            <div className={style.title} style={{fontSize: 100}}>{props.title}</div>
             <div className={style.subtitle}>{props.subtitle}</div>
             <div className={style.hashtag}>{props.hashtag}</div>
         </div>
