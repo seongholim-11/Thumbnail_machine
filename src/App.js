@@ -48,7 +48,7 @@ function App() {
     };
 
     return (
-        <p>
+        <div>
             <div className={style.root}></div>
             <div className={style.app}>
                 <Maintitle />
@@ -98,7 +98,7 @@ function App() {
                     </button>
                 </div>
             </div>
-        </p>
+        </div>
     );
 }
 

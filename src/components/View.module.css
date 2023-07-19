@@ -10,7 +10,7 @@
     padding-bottom: 15px;
     box-sizing: border-box;
     align-items: center;
-    background: url('https://blog.kakaocdn.net/dn/bfVUge/btqFDaiUxqK/BQX7vaRAYk6Fr8N480YKk1/img.jpg');
+    background: url('https://source.unsplash.com/random');
     background-size: cover;
 }
 
@@ -18,16 +18,19 @@
     font-size: 80px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
+    color: #fff;
 }
 
 .subtitle {
     font-size: 40px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
+    color: #fff;
 }
 
 .hashtag {
     font-size: 20px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
+    color: #fff;
 }

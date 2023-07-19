@@ -13,4 +13,5 @@ input{
     text-align: center;
     display: flex;
    outline: none; border-radius: 15px; padding: 10px 5px;
+   font-size: 15px;
 }

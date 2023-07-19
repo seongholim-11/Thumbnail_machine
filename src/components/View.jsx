@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./View.module.css";
 
 const View = (props) => {
@@ -19,14 +19,20 @@ const View = (props) => {
         backgroundStyle = {
             background: `linear-gradient(0deg, #${props.gradationColor[0]}, #${props.gradationColor[1]})`,
         };
-    } 
+    }
     if (props.backgroundUrl) {
-        backgroundStyle = { ...backgroundStyle, backgroundImage: `url(${props.backgroundUrl})` };
-        backgroundSize = { backgroundSize: 'cover' };
+        backgroundStyle = {
+            ...backgroundStyle,
+            backgroundImage: `url(${props.backgroundUrl})`,
+        };
+        backgroundSize = { backgroundSize: "cover" };
     }
 
     return (
-        <div className={style.wrap} style={{ ...backgroundStyle, ...backgroundSize }}>
+        <div
+            className={style.wrap}
+            style={{ ...backgroundStyle, ...backgroundSize }}
+        >
             <div className={style.title}>{props.title}</div>
             <div className={style.subtitle}>{props.subtitle}</div>
             <div className={style.hashtag}>{props.hashtag}</div>
