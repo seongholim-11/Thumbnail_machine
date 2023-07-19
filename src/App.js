@@ -15,6 +15,7 @@ function App() {
     // Background
     const [backgroundColor, setBackgroundColor] = useState("");
     const [gradationColor, setGradationColor] = useState([]);
+    const [backgroundUrl, setBackgroundUrl] = useState('');
 
     // capture
     const captureEl = useRef();
@@ -37,6 +38,7 @@ function App() {
                     hashtag={hashtag}
                     backgroundColor={backgroundColor}
                     gradationColor={gradationColor}
+                    backgroundUrl={backgroundUrl}
                 />
             </div>
             <div className={style.control}>
@@ -53,6 +55,8 @@ function App() {
                     setBackgroundColor={setBackgroundColor}
                     gradationColor={gradationColor}
                     setGradationColor={setGradationColor}
+                    backgroundUrl = {backgroundUrl}
+                    setBackgroundUrl = {setBackgroundUrl}
                 />
             </div>
             <button onClick={onCapture}>이미지 저장</button>

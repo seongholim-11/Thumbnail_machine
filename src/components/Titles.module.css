@@ -1,7 +1,16 @@
 .wrap{
     display: flex;
+    margin: 20px 0;
 }
 
 .inputs{
-    display: flex; flex-direction: column;
+    width: 100%;
+    display: flex; justify-content: space-around;
+}
+
+input{
+    width: 200px;
+    text-align: center;
+    display: flex;
+   outline: none; border-radius: 15px; padding: 10px 5px;
 }
