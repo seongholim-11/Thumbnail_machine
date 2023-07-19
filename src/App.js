@@ -5,6 +5,7 @@ import Background from "./components/Background";
 
 import html2canvas from "html2canvas";
 import { useState, useRef } from "react";
+import Maintitle from "./components/Maintitle";
 
 function App() {
     // Title
@@ -16,6 +17,16 @@ function App() {
     const [backgroundColor, setBackgroundColor] = useState("");
     const [gradationColor, setGradationColor] = useState([]);
     const [backgroundUrl, setBackgroundUrl] = useState("");
+
+    // reset
+    const onReset = () => {
+        setTitle("");
+        setSubtitle("");
+        setHashtag("");
+        setBackgroundColor("");
+        setGradationColor([]);
+        setBackgroundUrl("");
+    };
 
     // capture
     const captureEl = useRef();
@@ -40,6 +51,7 @@ function App() {
         <p>
             <div className={style.root}></div>
             <div className={style.app}>
+                <Maintitle />
                 <div className={style.view} ref={captureEl}>
                     <View
                         title={title}
@@ -48,7 +60,6 @@ function App() {
                         backgroundColor={backgroundColor}
                         gradationColor={gradationColor}
                         backgroundUrl={backgroundUrl}
-
                     />
                 </div>
                 <div className={style.control}>
@@ -69,16 +80,21 @@ function App() {
                         setBackgroundUrl={setBackgroundUrl}
                     />
                 </div>
-                <button onClick={onCapture} className={style.onCapture}>
-                    이미지 저장
-                </button>
+                <div className={style.buttons}>
+                    <button onClick={onReset} className={style.onReset}>
+                        🔄 Reset
+                    </button>
+                    <button onClick={onCapture} className={style.onCapture}>
+                        📸 Save Image
+                    </button>
+                </div>
                 <div
                     className={style.canvasback}
                     ref={appEl}
                     style={display ? { display: "block" } : { display: "none" }}
                 >
                     <button onClick={canvasclose} className={style.canvasclose}>
-                        Close
+                    🚫 Close
                     </button>
                 </div>
             </div>

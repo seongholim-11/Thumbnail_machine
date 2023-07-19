@@ -40,7 +40,7 @@ const Background = (props) => {
         let userInput = "";
         props.setBackgroundColor("");
         props.setGradationColor([]);
-        userInput = prompt("이미지 주소를 입력해주세요");
+        userInput = prompt("📬 Please enter the image address...");
         return userInput;
     };
 
@@ -76,7 +76,7 @@ const Background = (props) => {
                     buttonActive1();
                 }}
             >
-                랜덤 색상
+                🖍 Random color
             </button>
             <button
                 className={`${style.button2} ${
@@ -87,7 +87,7 @@ const Background = (props) => {
                     buttonActive2();
                 }}
             >
-                랜덤 그라데이션
+                🌈 Random Gradient
             </button>
             <button
                 className={`${style.button3} ${
@@ -98,7 +98,7 @@ const Background = (props) => {
                     props.setBackgroundUrl(backgroundUrl());
                 }}
             >
-                이미지 URL
+                🌐 Image URL
             </button>
         </div>
     );
