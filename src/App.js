@@ -15,52 +15,74 @@ function App() {
     // Background
     const [backgroundColor, setBackgroundColor] = useState("");
     const [gradationColor, setGradationColor] = useState([]);
-    const [backgroundUrl, setBackgroundUrl] = useState('');
+    const [backgroundUrl, setBackgroundUrl] = useState("");
 
     // capture
     const captureEl = useRef();
     const appEl = useRef();
+    const [display, setDisplay] = useState(false);
 
     const onCapture = () => {
         const element = captureEl.current;
+
+        setDisplay(true);
 
         html2canvas(element).then((canvas) => {
             appEl.current.appendChild(canvas);
         });
     };
 
+    const canvasclose = () => {
+        setDisplay(false);
+    };
+
     return (
-        <div className={style.app} ref={appEl}>
-            <div className={style.view} ref={captureEl}>
-                <View
-                    title={title}
-                    subtitle={subtitle}
-                    hashtag={hashtag}
-                    backgroundColor={backgroundColor}
-                    gradationColor={gradationColor}
-                    backgroundUrl={backgroundUrl}
-                />
+        <p>
+            <div className={style.root}></div>
+            <div className={style.app}>
+                <div className={style.view} ref={captureEl}>
+                    <View
+                        title={title}
+                        subtitle={subtitle}
+                        hashtag={hashtag}
+                        backgroundColor={backgroundColor}
+                        gradationColor={gradationColor}
+                        backgroundUrl={backgroundUrl}
+
+                    />
+                </div>
+                <div className={style.control}>
+                    <Title
+                        title={title}
+                        setTitle={setTitle}
+                        subtitle={subtitle}
+                        setSubtitle={setSubtitle}
+                        hashtag={hashtag}
+                        setHashtag={setHashtag}
+                    />
+                    <Background
+                        backgroundColor={backgroundColor}
+                        setBackgroundColor={setBackgroundColor}
+                        gradationColor={gradationColor}
+                        setGradationColor={setGradationColor}
+                        backgroundUrl={backgroundUrl}
+                        setBackgroundUrl={setBackgroundUrl}
+                    />
+                </div>
+                <button onClick={onCapture} className={style.onCapture}>
+                    이미지 저장
+                </button>
+                <div
+                    className={style.canvasback}
+                    ref={appEl}
+                    style={display ? { display: "block" } : { display: "none" }}
+                >
+                    <button onClick={canvasclose} className={style.canvasclose}>
+                        Close
+                    </button>
+                </div>
             </div>
-            <div className={style.control}>
-                <Title
-                    title={title}
-                    setTitle={setTitle}
-                    subtitle={subtitle}
-                    setSubtitle={setSubtitle}
-                    hashtag={hashtag}
-                    setHashtag={setHashtag}
-                />
-                <Background
-                    backgroundColor={backgroundColor}
-                    setBackgroundColor={setBackgroundColor}
-                    gradationColor={gradationColor}
-                    setGradationColor={setGradationColor}
-                    backgroundUrl = {backgroundUrl}
-                    setBackgroundUrl = {setBackgroundUrl}
-                />
-            </div>
-            <button onClick={onCapture}>이미지 저장</button>
-        </div>
+        </p>
     );
 }
 
