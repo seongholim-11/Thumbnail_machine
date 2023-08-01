@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Thumbnail_machine/static/css/main.d8f7664e.css",
+    "main.js": "/Thumbnail_machine/static/js/main.9e0f93f4.js",
+    "index.html": "/Thumbnail_machine/index.html",
+    "main.d8f7664e.css.map": "/Thumbnail_machine/static/css/main.d8f7664e.css.map",
+    "main.9e0f93f4.js.map": "/Thumbnail_machine/static/js/main.9e0f93f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8f7664e.css",
+    "static/js/main.9e0f93f4.js"
+  ]
+}
