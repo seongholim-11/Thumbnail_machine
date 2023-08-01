@@ -1,6 +1,7 @@
 # 🤖Thumbnail_machine
 
 리액트로 만든 동영상 썸네일 제작 웹페이지
+<br>
 
 ## 🖥️ 프로젝트 소개
 
@@ -12,16 +13,17 @@
 ## 🕰️ 개발 기간
 
 -   23.07.18 - 23.07.19 (2일)
+<br>
 
 
 ### ⚙️ 개발 환경
 ---
-
 -   `React 18 (useState, useRef)`
 -   `CSS (CSS-module)`
 -   `IDE : VScode 1.80`
 -   `ETC : Github / Mac Os 환경에서 개발`
 -   `DEPLOY : Github.io`
+<br>
 
 
 ### 📁 폴더 구조
@@ -30,6 +32,7 @@
 
 #### 📂 components
 - 화면을 구성하는 작은 요소 단위의 컴포넌트들을 담아 놓은 폴더입니다.
+<br>
 
 ## 📌 주요 기능
 
