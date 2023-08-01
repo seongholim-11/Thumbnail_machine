@@ -1,4 +1,4 @@
-# Thumbnail_machine
+# 🤖Thumbnail_machine
 
 리액트로 만든 동영상 썸네일 제작 웹페이지
 
@@ -13,7 +13,9 @@
 
 -   23.07.18 - 23.07.19 (2일)
 
+
 ### ⚙️ 개발 환경
+---
 
 -   `React 18 (useState, useRef)`
 -   `CSS (CSS-module)`
@@ -21,7 +23,9 @@
 -   `ETC : Github / Mac Os 환경에서 개발`
 -   `DEPLOY : Github.io`
 
+
 ### 📁 폴더 구조
+---
 <img width="100%" src="./readmeImg/folder.PNG"/>
 
 #### 📂 components
