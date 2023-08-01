@@ -1,10 +1,10 @@
 # 🤖Thumbnail_machine
----
+
 리액트로 만든 동영상 썸네일 제작 웹페이지
 <br>
 
 ## 🖥️ 프로젝트 소개
----
+
 리액트로 처음 만들어 본 토이프로젝트입니다.
 
 <img width="100%" src="./readmeImg/mainPage.PNG"/>
@@ -17,7 +17,7 @@
 
 
 ## ⚙️ 개발 환경
----
+
 -   `React 18 (useState, useRef)`
 -   `CSS (CSS-module)`
 -   `IDE : VScode 1.80`
@@ -27,7 +27,7 @@
 
 
 ## 📁 폴더 구조
----
+
 <img width="100%" src="./readmeImg/folder.PNG"/>
 
 #### 📂 components
@@ -35,7 +35,7 @@
 <br>
 
 ## 📌 주요 기능
----
+
 #### 썸네일 내용 입력
 
 -   메인 제목 작성 및 출력
