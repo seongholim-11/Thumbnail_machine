@@ -4,6 +4,7 @@ import style from './Titles.module.css'
 const Title = (props) => {
 
 
+    // title, subtitle, hashtag를 입력 받아 props로 전달
     return (
         <div className={style.wrap}>
             <div className={style.inputs}>

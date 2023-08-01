@@ -43,6 +43,7 @@ function App() {
         });
     };
 
+    // html2canvas 닫기 버튼
     const canvasclose = () => {
         setDisplay(false);
     };
