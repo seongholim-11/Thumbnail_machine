@@ -8,7 +8,7 @@
 
 리액트로 처음 만들어 본 토이프로젝트입니다.
 
-<img width="100%" src="./readmeImg/mainPage.PNG"/>
+<img width="100%" src="./readmeImg/thumnail.gif"/>
 <br>
 
 ## 🕰️ 개발 기간
@@ -71,6 +71,7 @@
 - 랜덤 이미지 URL(API)를 활용한 랜덤 이미지 기능 버튼
 - 폰트 크기, 모양 등을 변경할 수 있는 기능
 - View component 꾸미기
+<br>
 
 ## ➖ 수정할 사항
 - Redux를 활용한 상태 관리
