@@ -42,6 +42,7 @@
 ## 💻 Release History
 * 0.0.1 (23.07.19)
     * first release
+<br>
 
 ## 📌 주요 기능
 
